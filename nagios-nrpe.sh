@@ -98,7 +98,7 @@ sudo sh -c "echo 'ports=5666/tcp' >> /etc/ufw/applications.d/nagios"
 sudo ufw allow NRPE
 sudo ufw reload
 
-sleep 5
+sleep 2
 
 echo ""
 echo ""
@@ -107,7 +107,7 @@ echo ""
 echo ""
 echo "############### SKIPPING CONFIGURATION PART ###############"
 
-sleep 5
+sleep 2
 
 echo ""
 echo ""
@@ -117,13 +117,15 @@ echo ""
 
 sudo systemctl start nrpe.service
 
+sleep 5
+
 echo ""
 echo ""
 echo "############### Testing NRPE ###############"
 echo ""
 echo ""
 
-/usr/local/nagios/libexec/check_nrpe -H 127.0.0.1
+sudo /usr/local/nagios/libexec/check_nrpe -H 127.0.0.1
 
 echo ""
 echo ""
