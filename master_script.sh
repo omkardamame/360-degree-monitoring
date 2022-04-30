@@ -7,7 +7,7 @@ echo "#############################################################"
 echo "##                                                         ##"
 echo "##       Welcome to Nagios Auto Installation Script        ##"
 echo "##               Written By Prasad Dhupkar                 ##"
-echo "##                 Written For Ubuntu 20.04                ##"
+echo "##               Written For Ubuntu 20.04                  ##"
 echo "#############################################################"
 echo "#############################################################"
 
