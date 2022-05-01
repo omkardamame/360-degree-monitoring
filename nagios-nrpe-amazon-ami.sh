@@ -6,7 +6,7 @@ echo "#############################################################"
 echo "##                                                         ##"
 echo "##     Welcome to Nagios NRPE Auto Installation Script     ##"
 echo "##               Written By Omkar Damame                   ##"
-echo "##                 Written For Ubuntu                      ##"
+echo "##               Written For Amazon AMI                    ##"
 echo "#############################################################"
 echo "#############################################################"
 
