@@ -18,6 +18,8 @@ sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/ma
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/nagios-plugins.sh
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/client1.cfg
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/client2.cfg
+sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/contacts.cfg
+
 echo ""
 echo ""
 echo ""
@@ -27,7 +29,7 @@ sudo chmod u+x nagios-plugins.sh
 echo ""
 echo ""
 echo ""
-echo "############### Executing Required Scripts ###############"
+echo "############################## Executing Required Scripts ##############################"
 echo ""
 echo ""
 
@@ -37,7 +39,7 @@ sleep 5
 sleep 5
 ./nagios-plugins.sh
 echo ""
-echo ""
-echo "############### Execution Successful ! ###############"
-echo ""
+echo "####################################################################################"
+echo "############################## Execution Successful ! ##############################"
+echo "####################################################################################"
 echo ""
