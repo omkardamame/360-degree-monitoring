@@ -2,19 +2,21 @@
 
 echo ""
 echo ""
-echo "#############################################################"
-echo "##                                                         ##"
-echo "##     Welcome to Nagios NRPE Auto Installation Script     ##"
-echo "##               Written By Omkar Damame                   ##"
-echo "##                 Written For Ubuntu                      ##"
-echo "#############################################################"
-echo "#############################################################"
+echo "############################################################################"
+echo "############################################################################"
+echo "##                                                                        ##"
+echo "##            Welcome to Nagios NRPE Auto Installation Script             ##"
+echo "##                       Written By Omkar Damame                          ##"
+echo "##                       Written For Ubuntu 20.04                         ##"
+echo "##                                                                        ##"
+echo "############################################################################"
+echo "############################################################################"
 
 sleep 1
 
 echo ""
 echo ""
-echo "############### Installing Prerequisites ###############"
+echo "############################## Installing Prerequisites ##############################"
 echo ""
 echo ""
 
@@ -23,7 +25,7 @@ sudo apt-get install -y autoconf automake gcc libc6 libmcrypt-dev make libssl-de
 
 echo ""
 echo ""
-echo "############### Downloading the Soruce ###############"
+echo "############################## Downloading the Soruce ##############################"
 echo ""
 echo ""
 
@@ -33,7 +35,7 @@ tar xzf nrpe.tar.gz
 
 echo ""
 echo ""
-echo "############### Compiling ###############"
+echo "############################## Compiling ##############################"
 echo ""
 echo ""
 
@@ -43,7 +45,7 @@ sudo make all
 
 echo ""
 echo ""
-echo "############### Creating User And Group ###############"
+echo "############################## Creating User And Group ##############################"
 echo ""
 echo ""
 
@@ -51,7 +53,7 @@ sudo make install-groups-users
 
 echo ""
 echo ""
-echo "############### Installing Binaries ###############"
+echo "############################## Installing Binaries ##############################"
 echo ""
 echo ""
 
@@ -59,7 +61,7 @@ sudo make install
 
 echo ""
 echo ""
-echo "############### Installing Configuration File ###############"
+echo "############################## Installing Configuration File ##############################"
 echo ""
 echo ""
 
@@ -67,7 +69,7 @@ sudo make install-config
 
 echo ""
 echo ""
-echo "############### Update Services File ###############"
+echo "############################## Updating Services File ##############################"
 echo ""
 echo ""
 
@@ -77,7 +79,7 @@ sudo sh -c "sudo echo 'nrpe    5666/tcp' >> /etc/services"
 
 echo ""
 echo ""
-echo "############### Installing Service / Daemon ###############"
+echo "############################## Installing Service / Daemon ##############################"
 echo ""
 echo ""
 
@@ -86,7 +88,7 @@ sudo systemctl enable nrpe.service
 
 echo ""
 echo ""
-echo "############### Configuring Firewall ###############"
+echo "############################## Configuring Firewall ##############################"
 echo ""
 echo ""
 
@@ -102,16 +104,7 @@ sleep 2
 
 echo ""
 echo ""
-echo "############### UPDATE NRPE CONFIGURATION ON YOUR OWN ###############"
-echo ""
-echo ""
-echo "############### SKIPPING CONFIGURATION PART ###############"
-
-sleep 2
-
-echo ""
-echo ""
-echo "############### Starting Service / Daemon ###############"
+echo "############################## Starting Service / Daemon ##############################"
 echo ""
 echo ""
 
@@ -121,7 +114,7 @@ sleep 5
 
 echo ""
 echo ""
-echo "############### Testing NRPE ###############"
+echo "############################## Testing NRPE ##############################"
 echo ""
 echo ""
 
