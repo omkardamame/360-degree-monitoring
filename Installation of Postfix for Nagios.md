@@ -21,7 +21,7 @@ myhostname = fqdn.example.com
 ```
 ============================================================================================
 
-Add Gmail Username and Password to Postfix
+# Add Gmail Username and Password to Postfix
   
 Open or create the ```/etc/postfix/sasl/sasl_passwd``` file and add the SMTP Host, username, and password information:
 ```
@@ -40,7 +40,7 @@ sudo chmod 0600 /etc/postfix/sasl/sasl_passwd /etc/postfix/sasl/sasl_passwd.db
 ```
 ============================================================================================
  
-Configure the Postfix Relay Server
+# Configure the Postfix Relay Server
   
 ```
 sudo vim /etc/postfix/main.cf
@@ -69,12 +69,13 @@ Restart Postfix and Nagios:
 
 ```
 sudo systemctl restart postfix
+```
+```
 sudo systemctl restart nagios
-
 ```
 ============================================================================================
 
-Test Postfix Email Sending With Gmail
+# Test Postfix Email Sending With Gmail
 ```
 sendmail recipient@elsewhere.com
 From: you@example.com
@@ -84,11 +85,11 @@ This is a test email
 ```
 ============================================================================================
 
-Check for syslogs for errors or issues
+# Check for syslogs for errors or issues
 ```
 sudo tail -f /var/log/syslog
 ```
-References :
+# References :
 
 https://www.linode.com/docs/guides/configure-postfix-to-send-mail-using-gmail-and-google-workspace-on-debian-or-ubuntu/
 
