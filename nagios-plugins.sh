@@ -2,20 +2,21 @@
 
 echo ""
 echo ""
-echo "#############################################################"
-echo "#############################################################"
-echo "##                                                         ##"
-echo "##   Welcome to Nagios Plugins Auto Installation Script    ##"
-echo "##               Written By Omkar Damame                   ##"
-echo "##                 Written For Ubuntu                      ##"
-echo "#############################################################"
-echo "#############################################################"
+echo "############################################################################"
+echo "############################################################################"
+echo "##                                                                        ##"
+echo "##          Welcome to Nagios Plugins Auto Installation Script            ##"
+echo "##                       Written By Omkar Damame                          ##"
+echo "##                       Written For Ubuntu 20.04                         ##"
+echo "##                                                                        ##"
+echo "############################################################################"
+echo "############################################################################"
 
 sleep 1
 
 echo ""
 echo ""
-echo "############### Installing Prerequisites ###############"
+echo "############################## Installing Prerequisites ##############################"
 echo ""
 echo ""
 
@@ -24,7 +25,7 @@ sudo apt-get install -y autoconf gcc libc6 libmcrypt-dev make libssl-dev wget bc
 
 echo ""
 echo ""
-echo "############### Downloading the Soruce ###############"
+echo "############################## Downloading the Soruce ##############################"
 echo ""
 echo ""
 
@@ -34,7 +35,7 @@ tar zxf nagios-plugins.tar.gz
 
 echo ""
 echo ""
-echo "############### Compiling and Installing ###############"
+echo "############################## Compiling and Installing ##############################"
 echo ""
 echo ""
 
@@ -46,7 +47,7 @@ sudo make install
 
 echo ""
 echo ""
-echo "############### Testing NRPE + Plugins ###############"
+echo "############################## Testing NRPE + Plugins ##############################"
 echo ""
 echo ""
 
