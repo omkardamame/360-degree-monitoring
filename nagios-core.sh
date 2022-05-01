@@ -151,6 +151,8 @@ cp /home/ubuntu/contacts.cfg /usr/local/nagios/etc/objects/contacts.cfg
 
 sudo chown nagios:nagios /usr/local/nagios/etc/servers/client1.cfg
 sudo chown nagios:nagios /usr/local/nagios/etc/servers/client2.cfg
+sudo chown nagios:nagios /usr/local/nagios/etc/objects/contacts.cfg
+
 
 sudo systemctl restart apache2.service
 sudo systemctl restart nagios.service
