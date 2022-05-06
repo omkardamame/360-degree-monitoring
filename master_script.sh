@@ -16,8 +16,12 @@ echo "############### Getting Necessary Files ###############"
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/nagios-core.sh
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/nagios-nrpe.sh
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/nagios-plugins.sh
-sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/client1.cfg
-sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/client2.cfg
+sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/Nagios%20Server%201.cfg
+sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/Nagios%20Server%202.cfg
+sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/Client%201.cfg
+sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/Client%202.cfg
+sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/Webserver.cfg
+sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/Zabbix%20Server.cfg
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/contacts.cfg
 
 echo ""
@@ -42,4 +46,5 @@ echo ""
 echo "####################################################################################"
 echo "############################## Execution Successful ! ##############################"
 echo "####################################################################################"
+echo ""
 echo ""
