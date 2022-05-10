@@ -109,7 +109,7 @@ echo ""
 echo ""
 
 echo "Enter private IP of your server"
-read $ip
+read ip
 
 sudo sh -c "sed -i '/-r -w/ccommand[check_load]=\/usr\/local\/nagios\/libexec\/check_load -r -w .55,.30,.15 -c .70,.55,.30' /usr/local/nagios/etc/nrpe.cfg"
 sudo sh -c "sed -i '/-w 20/ccommand[check_disk]=\/usr\/local\/nagios/libexec\/check_disk -w 20% -c 10% -p \/dev\/root' /usr/local/nagios/etc/nrpe.cfg"
