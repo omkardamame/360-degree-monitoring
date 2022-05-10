@@ -104,6 +104,27 @@ sleep 2
 
 echo ""
 echo ""
+echo "############################## Configuring nrpe.cfg ##############################"
+echo ""
+echo ""
+
+echo "Enter private IP of your server"
+read $ip
+
+sudo sh -c "sed -i '/-r -w/ccommand[check_load]=\/usr\/local\/nagios\/libexec\/check_load -r -w .55,.30,.15 -c .70,.55,.30' /usr/local/nagios/etc/nrpe.cfg"
+sudo sh -c "sed -i '/-w 20/ccommand[check_disk]=\/usr\/local\/nagios/libexec\/check_disk -w 20% -c 10% -p \/dev\/root' /usr/local/nagios/etc/nrpe.cfg"
+sudo sh -c "sed -i '/-w 150 -c 200/ccommand[check_procs]=\/usr\/local\/nagios\/libexec\/check_procs -w 200 -c 300' /usr/local/nagios/etc/nrpe.cfg"
+
+sudo sh -c "sed -i '305 a command[check_mem]=\/usr\/local\/nagios\/libexec\/check_mem -C -u -w 70 -c 90' /usr/local/nagios/etc/nrpe.cfg"
+sudo sh -c "sed -i '306 a command[check_http]=/usr/local/nagios/libexec/check_http -H $ip -w 5 -c 10' /usr/local/nagios/etc/nrpe.cfg"
+sudo sh -c "sed -i '307 a command[check_ssh]=/usr/local/nagios/libexec/check_ssh $ip' /usr/local/nagios/etc/nrpe.cfg"
+sudo sh -c "sed -i '308 a command[check_ping]=/usr/local/nagios/libexec/check_ping -H $ip -w 100.0,20% -c 500.0,60% -p 5' /usr/local/nagios/etc/nrpe.cfg"
+
+sudo sh -c "sed -i 's|^allowed_hosts=.*|allowed_hosts=127.0.0.1,172.31.0.0/16|g' /usr/local/nagios/etc/nrpe.cfg"
+
+
+echo ""
+echo ""
 echo "############################## Starting Service / Daemon ##############################"
 echo ""
 echo ""
