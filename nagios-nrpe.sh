@@ -140,25 +140,3 @@ echo ""
 echo ""
 
 sudo /usr/local/nagios/libexec/check_nrpe -H 127.0.0.1
-
-echo ""
-echo ""
-echo "Note :"
-echo "The file nrpe.cfg is where the following settings will be defined. It is located: "
-echo "/usr/local/nagios/etc/nrpe.cfg"
-echo "If you wanted your nagios server to be able to connect, add it's IP address after a comma."
-echo ""
-echo ""
-#You should see the output similar to the following:
-
-#NRPE v4.0.3
-
-#If you get the NRPE version number (as shown above), NRPE is installed and configured correctly.
-#You can also test from your Nagios host by executing the same command above, but instead of 127.0.0.1 you will need to replace that with the IP Address / DNS name of the machine with NRPE running.
-
-#Service / Daemon Commands
-
-#sudo systemctl start nrpe.service
-#sudo systemctl stop nrpe.service
-#sudo systemctl restart nrpe.service
-#sudo systemctl status nrpe.service
