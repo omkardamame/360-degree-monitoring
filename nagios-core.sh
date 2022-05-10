@@ -125,7 +125,7 @@ sudo sh -c "sed -i 's/^authorized_for_all_hosts=.*/authorized_for_all_hosts=nagi
 sudo sh -c "sed -i 's/^authorized_for_all_service_commands=.*/authorized_for_all_service_commands=nagiosadmin,$line1/g' /usr/local/nagios/etc/cgi.cfg"
 sudo sh -c "sed -i 's/^authorized_for_all_host_commands=.*/authorized_for_all_host_commands=nagiosadmin,$line1/g' /usr/local/nagios/etc/cgi.cfg"
 
-sudo sh -c "sed -i 's/^refresh_rate=.*/refrash_rate=10/g' /usr/local/nagios/etc/cgi.cfg"
+sudo sh -c "sed -i 's/^refresh_rate=.*/refrash_rate=15/g' /usr/local/nagios/etc/cgi.cfg"
 
 echo ""
 echo ""
@@ -139,27 +139,26 @@ sudo sh -c "sed -i 's/nagios@localhost/$line2/g' /usr/local/nagios/etc/objects/c
 
 #sudo sh -c "sed -i 's/^admin_email=.*/admin_email=$line2/g' /usr/local/nagios/etc/nagios.cfg"
 sudo sh -c "sed -i 's|#cfg_dir=/usr/local/nagios/etc/servers|cfg_dir=/usr/local/nagios/etc/servers|g' /usr/local/nagios/etc/nagios.cfg"
-sudo sh -c "sed -i 's/^check_for_updates=.*/check_for_updates=0/g' /usr/local/nagios/etc/nagios.cfg"
 
 
 sudo mkdir /usr/local/nagios/etc/servers
 sudo chown nagios:nagios /usr/local/nagios/etc/servers
 
-cp /home/ubuntu/Client\ 1.cfg /usr/local/nagios/etc/servers/Client\ 1.cfg
-cp /home/ubuntu/Client\ 2.cfg /usr/local/nagios/etc/servers/Client\ 2.cfg
+cp /home/ubuntu/Instance\ 2.cfg /usr/local/nagios/etc/servers/Instance\ 2.cfg
 cp /home/ubuntu/Nagios\ Server\ 1.cfg /usr/local/nagios/etc/servers/Nagios\ Server\ 1.cfg
 cp /home/ubuntu/Nagios\ Server\ 2.cfg /usr/local/nagios/etc/servers/Nagios\ Server\ 2.cfg
 cp /home/ubuntu/Webserver.cfg /usr/local/nagios/etc/servers/Webserver.cfg
 cp /home/ubuntu/Zabbix\ Server.cfg /usr/local/nagios/etc/servers/Zabbix Server.cfg
 cp /home/ubuntu/contacts.cfg /usr/local/nagios/etc/objects/contacts.cfg
+cp /home/ubuntu/commands.cfg /usr/local/nagios/etc/objects/commands.cfg
 
-sudo chown nagios:nagios /usr/local/nagios/etc/servers/Client\ 1.cfg
-sudo chown nagios:nagios /usr/local/nagios/etc/servers/Client\ 2.cfg
+sudo chown nagios:nagios /usr/local/nagios/etc/servers/Instance\ 2.cfg
 sudo chown nagios:nagios /usr/local/nagios/etc/servers/Nagios\ Server\ 1.cfg
 sudo chown nagios:nagios /usr/local/nagios/etc/servers/Nagios\ Server\ 2.cfg
 sudo chown nagios:nagios /usr/local/nagios/etc/servers/Webserver.cfg
 sudo chown nagios:nagios /usr/local/nagios/etc/servers/Zabbix Server.cfg
 sudo chown nagios:nagios /usr/local/nagios/etc/objects/contacts.cfg
+sudo chown nagios:nagios /usr/local/nagios/etc/objects/commands.cfg
 
 sudo systemctl restart apache2.service
 sudo systemctl restart nagios.service
