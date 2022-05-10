@@ -148,7 +148,7 @@ cp /home/ubuntu/Instance\ 2.cfg /usr/local/nagios/etc/servers/Instance\ 2.cfg
 cp /home/ubuntu/Nagios\ Server\ 1.cfg /usr/local/nagios/etc/servers/Nagios\ Server\ 1.cfg
 cp /home/ubuntu/Nagios\ Server\ 2.cfg /usr/local/nagios/etc/servers/Nagios\ Server\ 2.cfg
 cp /home/ubuntu/Webserver.cfg /usr/local/nagios/etc/servers/Webserver.cfg
-cp /home/ubuntu/Zabbix\ Server.cfg /usr/local/nagios/etc/servers/Zabbix Server.cfg
+cp /home/ubuntu/Zabbix\ Server.cfg /usr/local/nagios/etc/servers/Zabbix\ Server.cfg
 cp /home/ubuntu/contacts.cfg /usr/local/nagios/etc/objects/contacts.cfg
 cp /home/ubuntu/commands.cfg /usr/local/nagios/etc/objects/commands.cfg
 
@@ -156,7 +156,7 @@ sudo chown nagios:nagios /usr/local/nagios/etc/servers/Instance\ 2.cfg
 sudo chown nagios:nagios /usr/local/nagios/etc/servers/Nagios\ Server\ 1.cfg
 sudo chown nagios:nagios /usr/local/nagios/etc/servers/Nagios\ Server\ 2.cfg
 sudo chown nagios:nagios /usr/local/nagios/etc/servers/Webserver.cfg
-sudo chown nagios:nagios /usr/local/nagios/etc/servers/Zabbix Server.cfg
+sudo chown nagios:nagios /usr/local/nagios/etc/servers/Zabbix\ Server.cfg
 sudo chown nagios:nagios /usr/local/nagios/etc/objects/contacts.cfg
 sudo chown nagios:nagios /usr/local/nagios/etc/objects/commands.cfg
 
