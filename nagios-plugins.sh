@@ -45,6 +45,13 @@ sudo ./configure
 sudo make
 sudo make install
 
+cd /usr/lib/nagios/plugins/
+sudo wget https://raw.githubusercontent.com/justintime/nagios-plugins/master/check_mem/check_mem.pl
+sudo mv check_mem.pl check_mem
+sudo mv check_mem /usr/local/nagios/libexec/
+cd /usr/local/nagios/libexec/
+chmod +x check_mem
+
 echo ""
 echo ""
 echo "############################## Testing NRPE + Plugins ##############################"
