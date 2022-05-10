@@ -139,6 +139,7 @@ sudo sh -c "sed -i 's/nagios@localhost/$line2/g' /usr/local/nagios/etc/objects/c
 
 #sudo sh -c "sed -i 's/^admin_email=.*/admin_email=$line2/g' /usr/local/nagios/etc/nagios.cfg"
 sudo sh -c "sed -i 's|#cfg_dir=/usr/local/nagios/etc/servers|cfg_dir=/usr/local/nagios/etc/servers|g' /usr/local/nagios/etc/nagios.cfg"
+sudo sh -c "sed -i 's|cfg_file=/usr/local/nagios/etc/objects/localhost.cfg|#cfg_file=/usr/local/nagios/etc/objects/localhost.cfg|g' /usr/local/nagios/etc/nagios.cfg"
 
 
 sudo mkdir /usr/local/nagios/etc/servers
