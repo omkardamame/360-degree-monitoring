@@ -18,11 +18,11 @@ sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/ma
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/nagios-plugins.sh
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/Nagios%20Server%201.cfg
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/Nagios%20Server%202.cfg
-sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/Client%201.cfg
-sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/Client%202.cfg
+sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/Instance%202.cfg
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/Webserver.cfg
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/Zabbix%20Server.cfg
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/contacts.cfg
+sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/commands.cfg
 
 echo ""
 echo ""
