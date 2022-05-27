@@ -45,6 +45,7 @@ sudo ./configure
 sudo make
 sudo make install
 
+sudo mkdir -p /usr/lib/nagios/plugins/
 cd /usr/lib/nagios/plugins/
 sudo wget https://raw.githubusercontent.com/justintime/nagios-plugins/master/check_mem/check_mem.pl
 sudo mv check_mem.pl check_mem
