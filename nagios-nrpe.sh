@@ -120,7 +120,7 @@ sudo sh -c "sed -i '306 a command[check_http]=/usr/local/nagios/libexec/check_ht
 sudo sh -c "sed -i '307 a command[check_ssh]=/usr/local/nagios/libexec/check_ssh $ip' /usr/local/nagios/etc/nrpe.cfg"
 sudo sh -c "sed -i '308 a command[check_ping]=/usr/local/nagios/libexec/check_ping -H $ip -w 100.0,20% -c 500.0,60% -p 5' /usr/local/nagios/etc/nrpe.cfg"
 
-sudo sh -c "sed -i 's|^allowed_hosts=.*|allowed_hosts=127.0.0.1,172.31.0.0/16|g' /usr/local/nagios/etc/nrpe.cfg"
+sudo sh -c "sed -i 's|^allowed_hosts=.*|allowed_hosts=127.0.0.1,192.168.20.0/24,172.31.0.0/16|g' /usr/local/nagios/etc/nrpe.cfg"
 
 
 echo ""
