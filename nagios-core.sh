@@ -145,13 +145,13 @@ sudo sh -c "sed -i 's|cfg_file=/usr/local/nagios/etc/objects/localhost.cfg|#cfg_
 sudo mkdir /usr/local/nagios/etc/servers
 sudo chown nagios:nagios /usr/local/nagios/etc/servers
 
-cp /home/ubuntu/Instance\ 2.cfg /usr/local/nagios/etc/servers/Instance\ 2.cfg
-cp /home/ubuntu/Nagios\ Server\ 1.cfg /usr/local/nagios/etc/servers/Nagios\ Server\ 1.cfg
-cp /home/ubuntu/Nagios\ Server\ 2.cfg /usr/local/nagios/etc/servers/Nagios\ Server\ 2.cfg
-cp /home/ubuntu/Webserver.cfg /usr/local/nagios/etc/servers/Webserver.cfg
-cp /home/ubuntu/Zabbix\ Server.cfg /usr/local/nagios/etc/servers/Zabbix\ Server.cfg
-cp /home/ubuntu/contacts.cfg /usr/local/nagios/etc/objects/contacts.cfg
-cp /home/ubuntu/commands.cfg /usr/local/nagios/etc/objects/commands.cfg
+cp /tmp/Instance\ 2.cfg /usr/local/nagios/etc/servers/Instance\ 2.cfg
+cp /tmp/Nagios\ Server\ 1.cfg /usr/local/nagios/etc/servers/Nagios\ Server\ 1.cfg
+cp /tmp/Nagios\ Server\ 2.cfg /usr/local/nagios/etc/servers/Nagios\ Server\ 2.cfg
+cp /tmp/Webserver.cfg /usr/local/nagios/etc/servers/Webserver.cfg
+cp /tmp/Zabbix\ Server.cfg /usr/local/nagios/etc/servers/Zabbix\ Server.cfg
+cp /tmp/contacts.cfg /usr/local/nagios/etc/objects/contacts.cfg
+cp /tmp/commands.cfg /usr/local/nagios/etc/objects/commands.cfg
 
 sudo chown nagios:nagios /usr/local/nagios/etc/servers/Instance\ 2.cfg
 sudo chown nagios:nagios /usr/local/nagios/etc/servers/Nagios\ Server\ 1.cfg
