@@ -13,6 +13,7 @@ echo "#############################################################"
 
 echo ""
 echo "############### Getting Necessary Files ###############"
+cd /tmp/
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/nagios-core.sh
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/nagios-nrpe.sh
 sudo wget https://raw.githubusercontent.com/omkardamame/360-degree-monitoring/main/nagios-plugins.sh
@@ -46,5 +47,4 @@ echo ""
 echo "####################################################################################"
 echo "############################## Execution Successful ! ##############################"
 echo "####################################################################################"
-echo ""
 echo ""
