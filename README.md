@@ -5,7 +5,7 @@
 - We are going to use separate EC2 instances just to monitor the the remote Hosts/Servers that we need to monitor.
 - Also we are going to setup this as to decentralize this monitoring service in case one goes down.
 
-> NOTE: For the sake of convinience We atleast need 4 to maximum 5 EC2 instances to implement this on testing level atleast and same amount of Elastic IP addresses to associate them with all the server so you won't have to reconfigure them all the time.
+> NOTE: For the sake of convenience We atleast need 4 to maximum 5 EC2 instances to implement this on testing level atleast and same amount of Elastic IP addresses to associate them with all the server so you won't have to reconfigure them all the time.
 
 ## Why Nagios or Zabbix ?
 
